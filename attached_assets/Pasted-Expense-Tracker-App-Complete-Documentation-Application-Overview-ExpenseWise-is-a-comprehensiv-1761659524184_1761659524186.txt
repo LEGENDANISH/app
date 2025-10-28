@@ -1,0 +1,359 @@
+Expense Tracker App - Complete Documentation
+📱 Application Overview
+ExpenseWise is a comprehensive expense tracking application built with React Native (Expo) that helps users monitor, analyze, and optimize their spending habits across multiple categories with intelligent insights and beautiful visualizations.
+
+🎯 Core Features
+
+Onboarding Experience
+Welcome Screen (3-4 seconds)
+
+Animated logo with brand identity
+Smooth fade-in transition
+"ExpenseWise - Track Smarter, Save Better" tagline
+
+User Setup
+
+Name collection ("What should we call you?")
+Currency preference selection
+Monthly budget goal setting
+Quick tutorial carousel (swipeable)
+
+Dashboard (Home Screen) Top Section - Time Period Selector
+Default View: Current month (1st to 30th/31st)
+Quick Filters:
+
+7 Days
+14 Days
+30 Days (Current Month)
+Custom Range (Long press to access)
+
+Summary Cards
+┌─────────────────────────────────┐
+│  💰 Total Spent This Month      │
+│      ₹45,678                    │
+│  📊 vs Budget: 76% (±12% ↑)    │
+└─────────────────────────────────┘
+
+┌──────────────┬──────────────────┐
+│ 🍔 Food      │ 📦 Quick         │
+│ ₹12,450      │ Commerce         │
+│              │ ₹8,920           │
+├──────────────┼──────────────────┤
+│ 🚗 Transport │ 💳 Subscriptions │
+│ ₹3,200       │ ₹2,499           │
+└──────────────┴──────────────────┘
+Visual Analytics Section
+
+Spending Trend Graph (Line chart)
+
+Daily/Weekly spending patterns
+Color-coded by category
+Interactive tooltips on tap
+
+Category Breakdown (Donut chart)
+
+Percentage distribution
+Top 5 categories highlighted
+Tap to see detailed breakdown
+
+Budget Progress Bar
+
+Visual indicator of monthly budget utilization
+Color changes: Green (0-70%), Yellow (70-90%), Red (90%+)
+
+📂 Expense Categories
+
+Food & Dining 🍔 Icons and subcategories:
+🍳 Breakfast - Morning meals
+🍛 Lunch - Afternoon meals
+🍕 Dinner - Evening meals
+🍿 Snacks - Quick bites, tea, coffee
+🍰 Desserts - Sweets, ice cream
+🍺 Drinks - Beverages, alcohol
+
+Quick Commerce 📦 Fast delivery services with individual tracking:
+🛒 Swiggy Instamart
+⚡ Zepto
+🍔 Zomato
+🛍️ BigBasket
+📱 Flipkart Minutes
+🏪 JioMart
+🟢 Blinkit
+🎯 Dunzo (if applicable)
+
+Each entry stores:
+
+Service name
+Order ID
+Items purchased
+Delivery fee
+Discounts applied
+
+Transportation 🚗
+🚕 Ola - Ride bookings
+🚙 Uber - Ride bookings
+🚌 Public Transport - Bus, metro, train
+⛽ Fuel - Petrol, diesel, EV charging
+🏍️ Bike/Scooter Rental
+🅿️ Parking
+
+Entertainment 🎮
+🎮 Gaming - In-app purchases, game subscriptions
+🎬 Movies - Theater tickets
+🎭 Events - Concerts, shows, exhibitions
+📚 Books - Physical and digital
+🎵 Music - Albums, concerts
+
+Outing & Social 🎉
+🍽️ Restaurant Dining
+☕ Cafes
+🏖️ Weekend Trips
+🎪 Activities - Bowling, gaming zones
+👫 Friends Hangout
+🎁 Gifts
+
+Personal Care 💅
+💄 Makeup - Cosmetics, skincare
+💇 Salon/Grooming
+🧴 Toiletries
+👔 Clothing
+👟 Footwear
+💍 Accessories
+
+Health & Medical 🏥
+💊 Medicines - Prescribed and OTC
+🏥 Doctor Visits
+🔬 Lab Tests
+💉 Vaccinations
+🏋️ Gym/Fitness
+🧘 Yoga/Wellness
+
+Stationery & Office ✏️
+📝 Writing Materials
+📔 Notebooks
+🖨️ Printing
+💼 Office Supplies
+🖥️ Tech Accessories
+
+Subscriptions 💳 Recurring payments with auto-tracking:
+📱 Phone Recharge
+▶️ YouTube Premium
+🎵 Spotify
+🎬 Netflix
+📺 Disney+ Hotstar
+📦 Amazon Prime
+⚡ Zepto Plus
+🍔 Zomato Gold
+🛒 Swiggy One
+🟢 Blinkit Plus
+
+Features:
+
+Renewal date tracking
+Auto-reminders (3 days before)
+Cost per month calculation
+Active/Inactive status toggle
+
+Loans & Lending 💸
+👥 Loaned to Friends - Track who owes you
+💰 Borrowed - Track what you owe
+📅 Due Date Reminders
+✅ Paid/Pending Status
+📊 Total Outstanding Summary
+
+Travel & Tickets ✈️
+🎫 Movie Tickets
+🚄 Train Tickets
+✈️ Flight Tickets
+🚌 Bus Tickets
+🏨 Hotel Bookings
+🎢 Event Tickets
+
+Utilities & Bills 🔌
+💡 Electricity
+💧 Water
+🌐 Internet/WiFi
+📞 Landline
+🏠 Rent
+🛠️ Maintenance
+
+Miscellaneous 📌
+🎁 Donations
+🏦 Bank Charges
+📨 Postal Services
+🔧 Repairs
+🧹 Household Items
+
+✨ Key Features Breakdown
+
+Add Expense Flow Floating Action Button (+) ↓ ┌─────────────────────────────┐ │ Add New Expense │ ├─────────────────────────────┤ │ Category: [Select...] │ ← Icon grid selector │ Amount: ₹_____ │ │ Date: [Today] [📅] │ │ Time: [Now] [🕐] │ │ Payment: [Cash/Card/UPI] │ │ Description: _______ │ │ Tags: #food #lunch │ │ Receipt: [📷 Upload] │ │ Location: [📍 Auto] │ │ │ │ [Save] [Save & Add More] │ └─────────────────────────────┘ Smart Features:
+Auto-suggests category based on keywords
+Remembers frequent vendors
+GPS location tagging
+Receipt OCR (extracts amount automatically)
+Voice input for quick entry
+
+Excel Import/Export Import Process
+Tap "Import" button
+Select Excel file from device
+Auto-map columns:
+Date → Transaction Date
+Amount → Amount
+Category → Category
+Description → Notes
+Preview mapping (editable)
+Confirm import
+Data merged with existing expenses
+Success message + summary Supported Formats:
+.xlsx (Excel 2007+)
+.xls (Excel 97-2003)
+.csv (Comma-separated)
+
+Required Columns:
+
+Date (any standard format)
+Amount (number)
+Category (auto-mapped to predefined categories)
+
+Optional Columns:
+
+Description/Notes
+Payment Method
+Tags
+Location
+
+Export Process
+Export Options:
+├── Current Period
+├── Custom Date Range
+├── Specific Category
+└── All Data
+
+Format Selection:
+├── Excel (.xlsx) - with charts
+├── CSV - raw data
+└── PDF Report - formatted summary
+
+[Generate & Share]
+Export Includes:
+
+Transaction details table
+Category-wise summary
+Monthly trends chart
+Budget vs actual comparison
+Top spending areas
+Subscription list with renewal dates
+
+Analytics & Insights 📊 Spending Patterns
+Peak Spending Days: Identifies when you spend most
+Category Trends: Month-over-month comparisons
+Unusual Expenses: Flags transactions above average
+Savings Rate: Income vs expense tracking
+Burn Rate: Daily average spending
+
+Smart Insights (AI-powered)
+💡 "You spent 23% more on dining out this month"
+💡 "Your transport costs are higher on Mondays"
+💡 "You saved ₹450 using Zomato vs last month"
+💡 "Subscription costs: ₹2,499/mo (5.4% of budget)"
+💡 "Friends owe you ₹3,200 - Send reminder?"
+Visual Reports
+
+Monthly Summary
+
+Total income vs expenses
+Savings achieved
+Top 5 categories
+Daily average
+
+Category Deep Dive
+
+Subcategory breakdown
+Trend line (6 months)
+Comparison with average user
+Optimization suggestions
+
+Subscription Dashboard
+
+Active subscriptions grid
+Upcoming renewals
+Annual cost projection
+Unused subscriptions alert
+
+Loan Tracker
+
+Outstanding loans given
+Borrowed amount pending
+Friend-wise breakdown
+Payment history
+
+Expense Management View Modes
+List View: Chronological transactions
+Calendar View: Expenses by date
+Category View: Grouped by category
+Tag View: Custom tag filtering
+
+Actions on Each Expense
+
+✏️ Edit: Modify any detail
+🗑️ Delete: Remove with confirmation
+📋 Duplicate: Quick re-entry
+📎 Attach Receipt: Add/view image
+🔗 Split: Divide among friends
+🔔 Set Reminder: For pending payments
+📤 Share: Export as image/PDF
+
+Bulk Actions
+
+Select multiple expenses
+Delete selected
+Export selected
+Change category
+Apply tags
+Mark as reimbursable
+
+Search & Filter Quick Filters: [All] [Food] [Transport] [Subscriptions] [More▼] Advanced Search:
+Amount range (₹100 - ₹5000)
+Date range picker
+Category multi-select
+Payment method
+Location-based
+Tag search
+Vendor/merchant name
+Minimum/maximum amount
+
+Saved Filters:
+
+"Food expenses > ₹500"
+"All Swiggy orders"
+"Weekend outings"
+"Ola/Uber rides"
+
+Budget Management Budget Types
+Monthly Budget: Overall spending limit
+Category Budgets: Per-category limits
+
+Food: ₹15,000
+Transport: ₹5,000
+Entertainment: ₹3,000
+
+Weekly Budget: Micro-management
+Custom Period Budget: Vacation, events
+
+Budget Features
+
+Real-time progress tracking
+Overspending alerts (push notifications)
+Budget rollover option
+Automatic budget suggestions based on history
+"Safe to spend" calculator
+
+Alerts & Notifications
+
+50% budget reached: Gentle reminder
+80% budget reached: Warning
+100% budget reached: Alert with options
+Daily spending summary (optional)
+Weekly report every Sunday
+
+add more things and features you want make sure best for phone use their local storage for storing data make sure all things look cool and asthetic
